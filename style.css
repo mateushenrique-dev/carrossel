@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.carrossel {
+  padding: 6.0625rem 0 0 7.625rem;
+  position: relative;
+}
+
+.carrossel__titulo {
+  font-size: 2rem;
+  line-height: 2.5625rem;
+  color: #093366;
+  margin-bottom: 1.875rem;
+}
+
+.carrossel__lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5625rem;
+  overflow: hidden;
+}
+
+.carrossel__item {
+  padding: 2.125rem 1.375rem;
+
+  background: #ffffff;
+  border: 0.0625rem solid #f2f7fe;
+  box-shadow: 0.25rem 0.25rem 1.25rem rgba(120, 135, 182, 0.1);
+  border-radius: 0.3125rem;
+  flex-shrink: 0;
+}
+
+.carrossel__item > img {
+  margin-bottom: 1.875rem;
+}
+
+.carrossel__item h2 {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #093366;
+
+  margin-bottom: 3.0625rem;
+}
+
+.carrossel__item div {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+}
+
+.carrossel__item div span {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.125rem;
+
+  color: #bec8d8;
+}
+
+.carrossel__setas {
+  position: absolute;
+  top: 102px;
+  right: 119px;
+  display: flex;
+  gap: 10px;
+}
+
+.carrossel__setas button {
+  background: transparent;
+  border: none;
+}
+
+.carrossel__setas button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .carrossel {
+    padding: 50px 30px;
+    position: relative;
+  }
+
+
+  .carrossel__setas {
+    top: 55px;
+  }
+}
