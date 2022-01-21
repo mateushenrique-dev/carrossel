@@ -79,6 +79,10 @@ li {
 }
 
 .carrossel__setas button:hover {
+  opacity: 0.8;
+}
+
+.carrossel__setas button:hover {
   cursor: pointer;
 }
 
@@ -91,5 +95,23 @@ li {
 
   .carrossel__setas {
     top: 55px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 485px) {
+  .carrossel__lista {
+    position: relative;
+  }
+
+  .carrossel__setas {
+    position: static;
+    justify-content: space-between;
+    
+    margin-bottom: 15px;
+  }
+
+  .carrossel__item {
+    width: 80%;
   }
 }
