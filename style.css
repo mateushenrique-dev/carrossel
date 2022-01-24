@@ -14,22 +14,22 @@ body {
 }
 
 .carrossel {
-  padding: 97px 0 0 122px;
+  padding: 6.0625rem 0 0 7.625rem;
   position: relative;
 }
 
 .carrossel__titulo {
-  font-size: 32px;
-  line-height: 41px;
+  font-size: 2rem;
+  line-height: 2.5625rem;
   color: #093366;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .carrossel__lista {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 1.5625rem;
   transition: transform 0.1s;
   transform: translate(0);
   overflow: scroll;
@@ -41,48 +41,48 @@ body {
 }
 
 .carrossel__item {
-  padding: 34px 22px;
+  padding: 2.125rem 1.375rem;
 
   background: #ffffff;
-  border: 1px solid #f2f7fe;
-  box-shadow: 4px 4px 20px rgba(120, 135, 182, 0.1);
-  border-radius: 5px;
+  border: .0625rem solid #f2f7fe;
+  box-shadow: .25rem .25rem 1.25rem rgba(120, 135, 182, 0.1);
+  border-radius: .3125rem;
   flex-shrink: 0;
-  max-width: 19.6875rem;
+  max-width: 315px;
 }
 
 .carrossel__item > img {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .carrossel__item h2 {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #093366;
 
-  margin-bottom: 49px;
+  margin-bottom: 3.0625rem;
 }
 
 .carrossel__item div {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: .9375rem;
 }
 
 .carrossel__item div span {
   font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.125rem;
 
   color: #bec8d8;
 }
 
 .carrossel__setas {
   position: absolute;
-  top: 6.375rem;
-  right: 7.4375rem;
+  top: 102px;
+  right: 119px;
   display: flex;
-  gap: .625rem;
+  gap: 10px;
 }
 
 .carrossel__setas button {
@@ -102,20 +102,20 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
   .carrossel {
-    padding: 3.125rem 1.875rem;
+    padding: 50px 30px;
     position: relative;
   }
 
 
   .carrossel__setas {
-    top: 3.4375rem;
-    right: 1.875rem;
+    top: 55px;
+    right: 30px;
   }
 }
 
-@media (max-width: 30.3125rem) {
+@media (max-width: 485px) {
   .carrossel__lista {
     position: relative;
   }
@@ -124,7 +124,7 @@ body {
     position: static;
     justify-content: space-between;
     
-    margin-bottom: .9375rem;
+    margin-bottom: 15px;
   }
 
   .carrossel__item {
